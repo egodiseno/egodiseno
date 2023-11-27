@@ -109,7 +109,7 @@ a:not([href]) {
 .hero-wrap h1{
   font-size: 4.375em;
   font-weight: 900;
-  text-transform: uppercase;}
+  text-transform: lowercase;}
 .hero-wrap p{
   font-size: 1.875em;
   font-weight: 300;
@@ -288,10 +288,40 @@ a:not([href]) {
   }
 #experiencia p{
     color: #fff;
+    font-size:1.5rem;
+  }
+  @media (max-width: 991.98px) {
+    #experiencia p{
+    color: #fff;
+    font-size:1rem;
+    }
+    #experiencia a{
+    color: #F9B233;
+    font-size:1rem;
+    } 
   }
 #experiencia p span{
     font-variant:small-caps;
-  }       
+  } 
+  #experiencia a{
+    color: #F9B233;
+    font-size:1.5rem;
+    cursor: pointer;
+  } 
+  #experiencia a:hover{
+    color: #fff;
+    text-decoration: none;
+  }  
+@media (max-width: 991.98px) {
+    #experiencia p{
+    color: #fff;
+    font-size:1rem;
+    }
+    #experiencia a{
+    color: #F9B233;
+    font-size:1rem;
+    } 
+  }      
 #experiencia .w-svg {
     width: 5em;
     filter:  brightness(0) invert(1);
