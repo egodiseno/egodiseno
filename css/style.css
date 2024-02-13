@@ -98,6 +98,7 @@ a:not([href]) {
 
                   }      
 /*----- INICIO -----*/
+.whatsapp-mobile{font-size: 2rem; padding: 0 .5rem;}
 .hero-wrap {
   width: 100%;
   height: 46.875em;
