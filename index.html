@@ -1,869 +1,342 @@
 <!doctype html>
-<html lang="es">
-  <head>
-    <!-- Required meta tags -->
+<html>
+<head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="img/code-solid.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emmanuel G. Portafolio</title>
+    <meta name="description" content="Bienvenido al portafolio de Emmauel G., diseñador gráfico y web especializado en soluciones creativas y efectivas. Con un enfoque en el diseño responsivo y la experiencia del usuario, ofrezco servicios de diseño web, identidad corporativa, marketing digital y más. Conoce mis proyectos y cómo puedo ayudarte a llevar tu marca al siguiente nivel.">
+    <meta name="author" content="Emmanuel G.">
+    <meta name="copyright" content="2024-2030">
+    <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Configure dark mode strategy -->
+<script>
+    tailwind.config = {
+        darkMode: 'class', /* 'class' or 'media', we use 'class' to enable dark mode manually */
+    }
+</script>
+<!-- Load theme on page load -->
+<script>
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark')
+    }
+</script>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9GQNDGK5P4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <!--<link rel="stylesheet" href="css/animate.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  -->
-
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/carousel.css" rel="stylesheet">
-
-    <title>< / egodiseño ></title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9GQNDGK5P4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-9GQNDGK5P4');
-    </script>
-  </head>
-  <!-- <body> -->
-  <body data-bs-spy="scroll" data-target="navbar-example" data-bs-offset="0"  tabindex="0" onload="init();"> 
-      
-<nav id="navbar-example" class="navbar navbar-light bg-light navbar-expand px-3 fixed-top">
-  <div class="mx-auto d-sm-flex d-block flex-sm-nowrap nav-test">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse text-center" id="navbarsExample11">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#inicio">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experiencia">Experiencia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portafolio">Portafolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
-        </li>
-      </ul>
-      </div>
-    </div>
-</nav>
-<section class="hero-wrap d-none d-sm-none d-md-block d-lg-block"  id="inicio">
-      <div class="container pt-5">
-          <div class="row no-gutters pt-5 mt-5 pt-sm-5 mt-sm-5 pt-md-5 mt-md-5 pt-lg-5 mt-lg-5">
-          <div class="col-12 pt-5 mt-5 pt-sm-5 mt-sm-5 pt-md-5 mt-md-5 pt-lg-5 mt-lg-5 text-center">
-              <h1 class="pt-5 mt-5 pt-sm-5 mt-sm-5 pt-md-5 mt-md-5 pt-lg-5 mt-lg-5 pb-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">< /egodiseño ></h1>
-              <button type="button" onClick="javascript:window.open('https://wa.me/+525530266338', '_blank');" target="_blank" class="btn btn-success"><i class="bi bi-whatsapp "></i> Escribeme</button>
-          </div>
-        </div>
-      </div>
-</section>
-<section class="hero-wrap d-block d-sm-block d-md-none d-lg-none" id="inicio">
-      <div class="container pt-5">
-          <div class="row no-gutters pt-5 mt-5 pt-sm-5 mt-sm-5 pt-md-5 mt-md-5 pt-lg-5 mt-lg-5">
-          <div class="col-12 pt-5 mt-5 pt-sm-5 mt-sm-5 pt-md-5 mt-md-5 pt-lg-5 mt-lg-5 text-center">
-              <h1 class="pt-5 mt-5 pt-sm-5 mt-sm-5 pt-md-5 mt-md-5 pt-lg-5 mt-lg-5 pb-3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">< /egodiseño ></h1>
-              <button type="button" onClick="javascript:window.open('https://wa.me/+525530266338', '_blank');" target="_blank" class="btn btn-success"><i class="bi bi-whatsapp whatsapp-mobile"></i></button>
-          </div>
-        </div>
-      </div>
-</section>
-<section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-2" style="background-color: #303841;">
-    <div class="container">
-      <div class="row no-gutters d-flex">
-        <div class="col-lg-4 col-md-12 d-flex align-self-stretch" data-aos="flip-up">
-          <div class="media block-6 services d-flex ">
-            <div class="icon-ego justify-content-center align-items-center d-flex"><img src="img/laptop-code-solid.svg" class="w-svg"></div>
-            <div class="media-body pl-4">
-              <h3 class="heading mb-3">Diseño Web</h3>
-              <p><span>UX/UI
-                <br>Website
-                <br>Landing
-                <br>email Marketing</span></p>
-            </div>
-          </div>      
-        </div>
-        <div class="col-lg-4 col-md-12 d-flex align-self-stretch" data-aos="flip-down">
-          <div class="media block-6 services services-2 d-flex">
-            <div class="icon justify-content-center align-items-center d-flex"><img src="img/pencil-ruler-solid.svg" class="w-svg"></div>
-            <div class="media-body pl-4">
-              <h3 class="heading mb-3"><span>Diseño Gráfico</span></h3>
-              <p>Ideas creativas, atractivas y efectivas</p>
-            </div>
-          </div>      
-        </div>
-        <div class="col-lg-4 col-md-12 d-flex align-self-stretch" data-aos="flip-up">
-          <div class="media block-6 services d-flex">
-            <div class="icon-ego justify-content-center align-items-center d-flex"><img src="img/file-video-solid.svg" class="w-svg"></div>
-            <div class="media-body pl-4">
-              <h3 class="heading mb-3">Diseño Multimedia</h3>
-              <p class=""><span>Comunicación interactiva para web, educación a distancia, publicidad, entretenimiento, etc.   </span></p>
-            </div>
-          </div>      
-        </div>
-      </div>
-    </div>
-</section>
-<section class="ftco-section" id="experiencia" style="background-color: #303841;" >
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-8 pb-5 pb-sm-3 pb-md-3 pb-lg-0">
-          <div class="row">
-          <div class="col-12 col-lg-12 mb-5 mb-sm-5 mb-md-5 mb-lg-5" data-aos="fade-up" data-aos-duration="3000">
-            <h2 class="pt-0 pt-sm-0 pt-md-0 pt-lg-2">Experiencia</h2>
-          </div>
-          </div>
-          <div class="row mt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="col-2 col-lg-2 justify-content-center align-items-center text-center"><img src="img/anima.svg" class="w-svg "></div>
-          <div class="col-10 col-lg-10 mt-0">
-            <h3 class="inst">Anima Estudios</h3>
-            <p class="dpto">Colorista | <span>“el chavo”</span> | <span>“el agente 00P2”</span> | <span>“aaa la película”</span> | <span>“top cat movie”</span>.</p>
-          </div>
-          </div>
-          <hr data-aos="zoom-in" data-aos-duration="3000">
-          <div class="row" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="col-2 col-lg-2 justify-content-center align-items-center text-center"><img src="img/unam.svg" class="w-svg"></div>
-          <div class="col-10 col-lg-10 mt-2">
-            <h3 class="inst ">Universidad Nacional Autónoma de México</h3>
-            <p class="dpto">- Sistema de Universidad Abierta y 
-            Educación a distancia (<span>suaed</span>) <span>fcpys-unam</span>
-            <br>- Coordinación de Universidad Abierta y Educación a distancia (<span>cuaed</span>) <span>unam</span></p>
-          </div>
-          </div>
-          <hr data-aos="zoom-in" data-aos-duration="3000">
-          <div class="row mt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="col-2 col-lg-2 justify-content-center align-items-center text-center"><img src="img/ipn.svg" class="w-svg"></div>
-          <div class="col-10 col-lg-10 mt-4">
-            <h3 class="inst">Instituto Politécnico Nacional</h3>
-            <p class="dpto">Campus Virtual <span>esca</span> Campus Tepepan</p>
-          </div>
-          </div>
-          <hr data-aos="zoom-in" data-aos-duration="3000">
-          
-          <div class="row mt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="col-2 col-lg-2 justify-content-center align-items-center text-center"><img src="img/sep.svg" class="w-svg mt-4"></div>
-          <div class="col-10 col-lg-10 mt-0">
-            <h3 class="inst">Secretaria de Educación Pública</h3>
-            <p class="dpto"><span>sep - esad</span></p>
-          </div>
-          </div>
-          <hr data-aos="zoom-in" data-aos-duration="3000">
-          
-          <div class="row mt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="col-2 col-lg-2 justify-content-center align-items-center text-center"><img src="img/publisenal.png" class="w-png mt-2"></div>
-          <div class="col-10 col-lg-10 mt-0">
-            <h3 class="inst">Publiseñal Marketing</h3>
-            <p class="dpto">Departamento de Diseño Gráfico</p>
-          </div>
-          </div>
-          <hr data-aos="zoom-in" data-aos-duration="3000">
-          <div class="row mt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="col-2 col-lg-2 justify-content-center align-items-center text-center"><img src="img/imss.svg" class="w-svg"></div>
-          <div class="col-10 col-lg-10 mt-2">
-            <h3 class="inst">Instituto Mexicano del Seguro Social</h3>
-            <p class="dpto">Departamento de Educación a distancia</p>
-          </div>
-          </div>
-          <hr data-aos="zoom-in" data-aos-duration="3000">
-          <div class="row mt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="col-2 col-lg-2 justify-content-center align-items-center text-center"><img src="img/concrad.svg" class="w-svg"></div>
-          <div class="col-10 col-lg-10 mt-0">
-            <h3 class="inst">Concrad</h3>
-            <p class="dpto">Departamento de Diseño Web</p>
-          </div>
-          </div>
-          <hr data-aos="zoom-in" data-aos-duration="3000">
-          <div class="row mt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-          <div class="col-2 col-lg-2 justify-content-center align-items-center text-center"><img src="img/rinoceronte.png" class="w-png "></div>
-          <div class="col-10 col-lg-10 mt-0">
-            <h3 class="inst">Rinoceronte MX</h3>
-            <p class="dpto">Departamento de Diseño Web</p>
-          </div>
-          </div>
-          <hr data-aos="zoom-in" data-aos-duration="3000">
-        </div>
-        <div class="col-10 col-lg-4 soft pt-5 pt-sm-5 pt-md-5 pt-lg-0 mx-auto"  data-aos="fade-left" data-aos-duration="3000">  
-          <div class="row" style="background-color:#1B1B1B; border-radius:0px 50px 0px 0px; ">
-          <div class="col-12 col-lg-12 mb-5">
-            <h2 class="pt-2"><span><i>Software</i></span></h2>
-          </div>
-          </div>
-          <div class="row" style="background-color:#1B1B1B;">
-            <div class="col-2 text-center"><img src="img/laptop-code-solid.svg" class="w-svg"></div>
-            <div class="col-10 ">
-            <h4 class="d-none d-sm-none d-md-none d-lg-none d-xl-block">Multimedia / Páginas web y Educación a distancia</h4>
-            <h5 class="d-block d-sm-block d-md-block d-lg-block d-xl-none">Multimedia / Páginas web y Educación a distancia</h5></div>
-          </div>
-          <div class="row pt-4 pb-5 pb-lg-3" style="background-color:#1B1B1B; "> 
-            <div class="offset-2 col-10"><p class="ware">Figma</p></div> 
-            <div class="offset-2 col-10"><p class="ware">HTML5</p></div>
-            <div class="offset-2 col-10"><p class="ware">CSS3</p></div>
-            <div class="offset-2 col-10"><p class="ware">Javascript</p></div>
-            <div class="offset-2 col-10"><p class="ware">PHP</p></div>
-            <div class="offset-2 col-10"><p class="ware">Bootstrap</p></div>
-            <div class="offset-2 col-10"><p class="ware">Moodle</p></div>
-            <div class="offset-2 col-10"><p class="ware">Wordpress</p></div>
-            <div class="offset-2 col-10"><p class="ware">XD</p></div>
-            <div class="offset-2 col-10"><p class="ware">Premiere</p></div>
-            <div class="offset-2 col-10"><p class="ware">After Effects</p></div>
-            <div class="offset-2 col-10"><p class="ware">Audition</p></div>
-            <div class="offset-2 col-10"><p class="ware">Dreamweaver</p></div>
-            <div class="offset-2 col-10"><p class="ware">Flash / ActionScript</p></div>
-            <div class="offset-2 col-10"><p class="ware">Hot Potatoes</p></div>
-            <div class="offset-2 col-10"><p class="ware">exeLearning</p></div>
-          </div>
-          <div class="row pt-4 dg boxshadow" style="background-color:#F9B233; ">
-            <div class="col-2 text-center"><img src="img/pencil-ruler-solid.svg" class="w-svg"></div>
-            <div class="col-10 mt-4"><h4>Diseño Gráfico</h4></div>
-          </div>
-          <div class="row pb-4 pb-lg-3 dg" style="background-color:#F9B233;">
-            
-            <div class="offset-2 col-10"><p>Illustrator</p></div>
-            <div class="offset-2 col-10"><p>PhotoShop</p></div>
-            <div class="offset-2 col-10"><p>InDesign</p></div>
-            <div class="offset-2 col-10"><p>Acrobat</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-<section class="ftco-section" id="portafolio" >
-    <div class="container">
-      <div class="row ">
-        <div class="col-12 col-lg-12 mb-5" data-aos="fade-up" data-aos-duration="3000">
-           <h2 class="">Portafolio</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1100">
-          <div class="project">
-            <a href="https://realmadridlanding.netlify.app/" data-bs-toggle="modal" data-bs-target="#modal04" class="img d-flex align-items-center" style="background-image: url(img/invex_rm_thum.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="https://realmadridlanding.netlify.app/" data-bs-toggle="modal" data-bs-target="#modal04">
-              <span class="subheading"><i>Landing</i></span>
-              <h3>Banco Invex <br> &nbsp;</h3>
-              <p><span class="fas fa-laptop-code mr-1"></span> Diseño y programacion de <i>Landing</i>.</p>
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1000">
-          <div class="project">
-            <a href="https://www.youtube.com/watch?v=-UJ3FJd7LAI" data-bs-toggle="modal" data-bs-target="#modal13" class="img d-flex align-items-center" style="background-image: url(img/promorrss.jpg); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="https://www.youtube.com/watch?v=-UJ3FJd7LAI" data-bs-toggle="modal" data-bs-target="#modal13">
-              <span class="subheading">Animación</span>
-              <h3>Promocionales<br> &nbsp;</h3>
-              <p><span class="fas fa-file-video mr-1"></span> Videos para Redes Sociales</p>
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-          <div class="project">
-            <a href="https://www.youtube.com/watch?v=Q1LMtym9TqA&t" data-bs-toggle="modal" data-bs-target="#modal06" class="img d-flex align-items-center" style="background-image: url(img/ipn_02.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="https://www.youtube.com/watch?v=Q1LMtym9TqA&t" data-bs-toggle="modal" data-bs-target="#modal06">
-              <span class="subheading">Animacion</span>
-              <h3>Instituto Politecnico Nacional <br> &nbsp;</h3>
-              <p><span class="fas fa-file-video mr-1"></span> Audiovisuales para el apoyo del aprendizaje.
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1200">
-          <div class="project">
-            <a href="https://www.haiatyamezcua.net/" data-bs-toggle="modal" data-bs-target="#modal02" class="img d-flex align-items-center" style="background-image: url(img/haiat_thum.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="https://www.haiatyamezcua.net/" data-bs-toggle="modal" data-bs-target="#modal02">
-              <span class="subheading">Sitio Web</span>
-              <h3>HAIAT & AMEZCUA <br> &nbsp;</h3>
-              <p><span class="fas fa-laptop-code mr-1"></span> Programación del sitio web.</p>
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1400">
-          <div class="project">
-            <a href="https://enlaceseducativosinternacionales.com/" data-bs-toggle="modal" data-bs-target="#modal03" class="img d-flex align-items-center" style="background-image: url(img/eei_thum.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="https://enlaceseducativosinternacionales.com/" data-bs-toggle="modal" data-bs-target="#modal03">
-              <span class="subheading"><i>Wordpress</i></span>
-              <h3>Enlaces Educativos Internacionales</h3>
-              <p><span class="fas fa-laptop-code mr-1"></span> Diseño y personalizacion del sitio web.</p>
-            </div> 
-          </div>
-        </div>
-        
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1300">
-          <div class="project">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#modal05" class="img d-flex align-items-center" style="background-image: url(img/mailing.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="#" data-bs-toggle="modal" data-bs-target="#modal05">
-              <span class="subheading"><i>Mailing</i></span>
-              <h3>Banco Invex <br> &nbsp;</h3>
-              <p><span class="fas fa-laptop-code mr-1"></span> Diseño y programacion de <i>Mailing</i></p>
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1000">
-          <div class="project">
-            <a href="http://www.youtube.com/watch?v=kE8WBGyF5H4" data-bs-toggle="modal" data-bs-target="#modal01" class="img d-flex align-items-center" style="background-image: url(img/ipn_01.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="http://www.youtube.com/watch?v=kE8WBGyF5H4" data-bs-toggle="modal" data-bs-target="#modal01">
-              <span class="subheading">Animación</span>
-              <h3>Instituto Politecnico Nacional <br> &nbsp;</h3>
-              <p><span class="fas fa-file-video mr-1"></span> Audiovisuales para el apoyo del aprendizaje.</p>
-            </div> 
-          </div>
-        </div>
-        
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-          <div class="project">
-            <a href="https://www.youtube.com/watch?v=Jed34fYj28g" data-bs-toggle="modal" data-bs-target="#modal07" class="img d-flex align-items-center" style="background-image: url(img/firdus.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="https://www.youtube.com/watch?v=Jed34fYj28g" data-bs-toggle="modal" data-bs-target="#modal07">
-              <span class="subheading">Realización de video</span>
-              <h3>Inside the body <br> &nbsp;</h3>
-              <p><span class="fas fa-file-video mr-1"></span> Video promocional.
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-          <div class="project">
-            <a href="http://ggbservicios.com.mx/" data-bs-toggle="modal" data-bs-target="#modal08" class="img d-flex align-items-center" style="background-image: url(img/ggb.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="http://ggbservicios.com.mx/" data-bs-toggle="modal" data-bs-target="#modal08">
-              <span class="subheading">Sitio web</span>
-              <h3>GGB TI+ <br> &nbsp;</h3>
-              <p><span class="fas fa-laptop-code mr-1"></span> Diseño y programación.
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-          <div class="project">
-            <a href="http://www.hotelmariadelcarmen.com/" data-bs-toggle="modal" data-bs-target="#modal09" class="img d-flex align-items-center" style="background-image: url(img/mch.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="http://www.hotelmariadelcarmen.com/" data-bs-toggle="modal" data-bs-target="#modal09">
-              <span class="subheading">Sitio web</span>
-              <h3>Hotel María del Carmen <br> &nbsp;</h3>
-              <p><span class="fas fa-laptop-code mr-1"></span> Diseño y programación.
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-          <div class="project">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#modal10" class="img d-flex align-items-center" style="background-image: url(img/audiovideo.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="#" data-bs-toggle="modal" data-bs-target="#modal10">
-              <span class="subheading">Producción Audiovisual</span>
-              <h3>Agencia de Marketing Digital <br> &nbsp;</h3>
-              <p><span class="fas fa-file-video mr-1"></span> Videos promocionales.
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-          <div class="project">
-            <a href="http://grupozurcom.com.mx/" data-bs-toggle="modal" data-bs-target="#modal11" class="img d-flex align-items-center" style="background-image: url(img/zurcom.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="http://grupozurcom.com.mx/" data-bs-toggle="modal" data-bs-target="#modal11">
-              <span class="subheading">Wordpress</span>
-              <h3>Grupo Zurcom <br> &nbsp;</h3>
-              <p><span class="fas fa-laptop-code mr-1"></span> Diseño y programación.
-            </div> 
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4" data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1500">
-          <div class="project">
-            <a href="https://invexvolarislanding.netlify.app/" data-bs-toggle="modal" data-bs-target="#modal12" class="img d-flex align-items-center" style="background-image: url(img/invex_volaris.png); width: 350px;  height: 300px;">
-              <div class="icon d-flex align-items-center justify-content-center mb-5"><span class="fas fa-plus"></span></div>
-            </a>
-            <div class="text" style="cursor: pointer;" href="https://invexvolarislanding.netlify.app/" data-bs-toggle="modal" data-bs-target="#modal12">
-              <span class="subheading"><i>Landing</i></span>
-              <h3>Banco Invex <br> &nbsp;</h3>
-              <p><span class="fas fa-laptop-code mr-1"></span> Diseño y programación.
-            </div> 
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
-<footer class="ftco-footer" >
-    <div class="container mb-5 pb-4">
-      <div class="row">
-         <div class="col-lg col-md-6">
-          <div class="ftco-footer-widget">
-            <h1 class="ftco-heading-2 d-flex align-items-center">Estudios</h1>
-            <div class="row">
-            <div class="col-2 col-md-2 col-lg-2"><img src="img/unam.svg" class="w-svg logounam"></div>
-            <div class="col-10 col-md-10 col-lg-10">
-            <h5>Diseño y comunicación visual</h5>
-            <p>Diseño Editorial</p>
-            <h6>Escuela Nacional de Artes Plasticas</h6>
-            <h6>Universidad Nacional Autonoma de Mexico</h6>
-            
-            </div>
-            </div>
-          </div>
-        </div> 
-        <div class="col-lg col-md-6">
-           <div class="ftco-footer-widget">
-            <h2 class="ftco-heading-2" style="text-align: right;">&nbsp;<!-- CONTACTO --></h2>
-            <div class="block-23 mb-3">
-              <ul>
-                 <li style="text-align: right;"><span class="fa fa-laptop-code mr-3"></span><span class="text"> Curso Flash/Action Script. </span></li> 
-                <li style="text-align: right;"><span class="fas fa-laptop mr-3"></span><span class="text"> Diplomado en Diseño Digital.</span></li>
-                <li style="text-align: right;"><span class="fas fa-code mr-3"></span><span class="text"> Diplomado JavaScript para Objetos Educativos.</a></li>
-                <li style="text-align: right;"><span class="fas fa-laptop mr-3"></span><span class="text"> Curso Completo de Marketing Digital.</a></li>
-                <li style="text-align: right;"><span class="fa fa-laptop-code mr-3"></span><span class="text"> Curso Diseño UX: experiencia de usuario UX/UI.</a></li>
-                <li style="text-align: right;"><span class="fas fa-laptop mr-3"></span><span class="text"> Curso Figma de principio a fin.</a></li>
-              </ul> 
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid bg-primary" id="contacto">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-8 col-lg-8 aside-stretch py-3 contacto">
-            <span class="heading">CONTACTO</span> <a href="https://wa.me/+525530266338" target="_blank"><span class="fa fa-whatsapp mr-3"></span><span class="text"> 55 3026 6338</span></a> <a href="mailto:egodiseno@gmail.com" target="_blank"><span class="fa fa-envelope mr-3"></span><span class="text"> egodiseno[a]gmail.com</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>  
-
-<!-- Modal 01 -->
-<div class="modal fade modal-video" id="modal01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Animación</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <p>Reel de videos de animación realizados para el <b>Instituto Politecnico Nacional</b> para el Campus Virtual de la <b>ESCA Tepepan</b>.</p>
-        <iframe src="https://www.youtube-nocookie.com/embed/3XtUaxg0gA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe>
-        <p>Diseño y animación de personajes y escenarios para el desarrollo de material didáctico interactivo para las unidades de aprendizaje de las Licenciaturas de Relaciones Comerciales y Contaduría Pública.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 02 -->
-<div class="modal fade modal-web" id="modal02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">A&H Haiat y Amezcua</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-link pb-3 ">
-        <a href="https://www.haiatyamezcua.net/" target="_blank" class=" ms-3">Visita el sitio web</a>
-      </div>
-      <div class="modal-body text-center">
-        
-        <p class="pt-3">Programación del sitio web <b>A&H Haiat y Amezcua</b> en Bootstrap. </p>
-        <img src="img/haiat01.jpg" class="img-fluid">
-        <p class="pt-4">Herramientas ultilizadas: Photoshop, HTML 5, CCS 3.</p>
-        <img src="img/haiat02.jpg" class="img-fluid">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-yellow" onclick="window.open('https://www.haiatyamezcua.net/', '_blank');">Visita el sitio web</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 03 -->
-<div class="modal fade modal-web" id="modal03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Enlaces Educativos Internacionales</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-link pb-3 ">
-        <a href="https://enlaceseducativosinternacionales.com/" target="_blank" class=" ms-3">Visita el sitio web</a>
-      </div>
-      <div class="modal-body text-center">
-        
-        <p class="pt-3">Diseño y personalización del sitio web <b>Enlaces Educativos Internacionales</b> en Wordpress. </p>
-        <img src="img/eei01.png" class="img-fluid">
-        <p class="pt-4">Herramientas ultilizadas: Photoshop, HTML 5, CCS 3.</p>
-        <img src="img/eei02.png" class="img-fluid">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-yellow" onclick="window.open('https://enlaceseducativosinternacionales.com/', '_blank');">Visita el sitio web</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 04 -->
-<div class="modal fade modal-web" id="modal04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Banco Invex</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-link pb-3 ">
-        <a href="https://realmadridlanding.netlify.app/" target="_blank" class=" ms-3">Visita el sitio web</a>
-      </div>
-      <div class="modal-body text-center">
-        
-        <p class="pt-3">Diseño y programación del landing realizado para <b>Banco Invex</b>. </p>
-        <img src="img/invex_rm_01.png" class="img-fluid">
-        <p class="pt-4">Herramientas ultilizadas: Photoshop, Bootstrap, HTML 5, CCS 3, Javascript.</p>
-        <img src="img/invex_rm_02.png" class="img-fluid">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-yellow" onclick="window.open('https://realmadridlanding.netlify.app/', '_blank');">Visita el sitio web</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 05 -->
-<div class="modal fade modal-web" id="modal05" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Banco Invex</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-link pb-3 ">
-        
-      </div>
-      <div class="modal-body text-center">
-          <p class="pt-3">Diseño y programación de email marketing para <b>Invex Banco</b></p>
-          <img src="img/mailing_01.jpg" class="img-fluid">
-          <p class="pt-4">Herramientas ultilizadas: Photoshop, HTML, CCS.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 06 -->
-<div class="modal fade modal-video" id="modal06" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Animación</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <p>Enfoque Cultural. Video de animación realizado para el <b>Instituto Politecnico Nacional</b> para el Campus Virtual de la <b>ESCA Tepepan</b>.</p>
-        <iframe src="https://www.youtube.com/embed/Q1LMtym9TqA?si=7qQGKi_bTJxKNoh3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe>
-        <p>Diseño y animación de material didáctico interactivo para las unidades de aprendizaje de ls Licenciatura de Relaciones Comerciales.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 07 -->
-<div class="modal fade modal-video" id="modal07" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Realización de video</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <p>Realización de videos promocionales para la producción <b>Firdus</b> de la compañia de danza <b>Inside the body</b>.</p>
-        <iframe src="https://www.youtube.com/embed/Jed34fYj28g?si=nd_jIvK9nSSLfssA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe>
-        <p>Herramientas ultilizadas: Photoshop, Premiere Pro.</p>
-        <iframe src="https://www.youtube.com/embed/GW-cV1TAz9A?si=qtkEPuvMMTQSyVOu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 08 -->
-<div class="modal fade modal-web" id="modal08" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">GGB TI+</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-link pb-3 ">
-        <a href="http://ggbservicios.com.mx/" target="_blank" class=" ms-3">Visita el sitio web</a>
-      </div>
-      <div class="modal-body text-center">
-        
-        <p class="pt-3">Diseño y programación del sitio web realizado para <b>GGB TI+</b>. </p>
-        <img src="img/ggb01.png" class="img-fluid">
-        <p class="pt-4">Herramientas ultilizadas: Photoshop, Illustrator, HTML 5, CCS 3, w3schools y Bootstrap.</p>
-        <img src="img/ggb02.png" class="img-fluid">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-yellow" onclick="window.open('http://ggbservicios.com.mx/', '_blank');" >Visita el sitio web</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 09 -->
-<div class="modal fade modal-web" id="modal09" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Hotel María del Carmen</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-link pb-3 ">
-        <a href="http://www.hotelmariadelcarmen.com/" target="_blank" class=" ms-3">Visita el sitio web</a>
-      </div>
-      <div class="modal-body text-center">
-        
-        <p class="pt-3">Diseño y programación del sitio web realizado para <b>Hotel María del Carmen</b>. </p>
-        <img src="img/mch01.png" class="img-fluid">
-        <p class="pt-4">Herramientas ultilizadas: Photoshop, Illustrator, HTML, CCS, Javascript.</p>
-        <img src="img/mch02.png" class="img-fluid">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-yellow" onclick="window.open('http://www.hotelmariadelcarmen.com/', '_blank');">Visita el sitio web</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal 10 -->
-<div class="modal fade modal-video" id="modal10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Realización de videos</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <p>Realización de videos publicitarios.</p>
-        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V1mVRyYmd6Y?si=JEjAtLmyGgeT16-o" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="carousel-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_cNV4wwsCx8?si=G_0x-H3wvro4xTEF" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="carousel-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZSLnaP0OmKM?si=Hxco1m1T_RPCyj53" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <!-- Add more carousel items for additional videos -->
-            </div>
-            <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#videoCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
-        </div>
-        <p>After Effects, Photoshop, Illustrator</p>
-        <div id="videoCarousel_a" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QHZ61AB8sXI?si=3eG6ZJdkzo_Jl0-k" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="carousel-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zNBChb7KpDw?si=5bmQL48SjU49GeAE" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <div class="carousel-item">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CAjYEL4Xc7k?si=6CUfbVT9v0r_lSyi" frameborder="0" allowfullscreen></iframe>
-                </div>
-                <!-- Add more carousel items for additional videos -->
-            </div>
-            <a class="carousel-control-prev" href="#videoCarousel_a" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#videoCarousel_a" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
-        </div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 11 -->
-<div class="modal fade modal-web" id="modal11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Grupo Zurcom</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-link pb-3 ">
-        <a href="http://grupozurcom.com.mx/" target="_blank" class=" ms-3">Visita el sitio web</a>
-      </div>
-      <div class="modal-body text-center">
-        
-        <p class="pt-3">Diseño y personalización del sitio web realizado para <b>Grupo Zurcom</b>. </p>
-        <img src="img/zurcom01.png" class="img-fluid">
-        <p class="pt-4">Herramientas ultilizadas: Photoshop, Wordpress, HTML, CCS.</p>
-        <img src="img/zurcom02.png" class="img-fluid">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-yellow" onclick="window.open('http://grupozurcom.com.mx/', '_blank');">Visita el sitio web</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 12 -->
-<div class="modal fade modal-web" id="modal12" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Banco Invex</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-link pb-3 ">
-        <a href="https://invexvolarislanding.netlify.app/" target="_blank" class=" ms-3">Visita el sitio web</a>
-      </div>
-      <div class="modal-body text-center">
-        
-        <p class="pt-3">Diseño y programación del landing realizado para <b>Banco Invex</b>. </p>
-        <img src="img/volaris01.jpg" class="img-fluid">
-        <p class="pt-4">Herramientas ultilizadas: Photoshop, Bootstrap, HTML 5, CCS 3.</p>
-        <img src="img/volaris02.jpg" class="img-fluid">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-yellow" onclick="window.open('https://invexvolarislanding.netlify.app/', '_blank');">Visita el sitio web</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Modal 13 -->
-<div class="modal fade modal-video" id="modal13" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Animación</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <p>Promocionales para Redes Sociales.</p>
-        <iframe src="https://www.youtube.com/embed/-UJ3FJd7LAI?si=ZWPOwlgoYrTEWY-_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; " allowfullscreen></iframe>
-        <p>Herramientas ultilizadas: Affter Effects, Photoshop, Illustrator</p>
-        <div id="videoCarousel_b" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <iframe width="464" height="825" src="https://www.youtube.com/embed/VuX12p4lbJ8" title="Promo Ads" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                   
-                </div>
-                <div class="carousel-item">
-                  <iframe width="464" height="825" src="https://www.youtube.com/embed/xJRnmYIoVU0" title="Natura" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                   
-                </div>
-                <!-- Add more carousel items for additional videos -->
-            </div>
-            <a class="carousel-control-prev" href="#videoCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#videoCarousel_b" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F9B233"/></svg></div>
-
-<!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">var scrollSpy = new bootstrap.ScrollSpy(document.body, { target: '#navbar-example'})</script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>
-
-    <script src="js/jquery.min.js"></script> 
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
+  gtag('config', 'G-9GQNDGK5P4');
+</script>
+  
+</head>
+<body class="inter bg-white dark:bg-slate-900">
+  <main class="container mx-auto">
+    <div>
+    <div class="py-4 flex flex-row bg-white dark:bg-slate-900">
+        <div class="basis-full"></div>
+        <div class="basis-6">
+            <button id="theme-toggle" type="button" class="transition ease-in-out delay-150 duration-300 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4
     
-    
-    <script src="js/main.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
+     11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+        <div class="basis-6"></div>
+    </div>
+    </div>
+    <div class="flex flex-col lg:flex-row">
+        <div class="basis-full lg:basis-1/4 lg:relative">
+            <div class=" lg:fixed pl-0 lg:pl-6 xl:pl-20">
+            <div class="mx-auto py2">
+                <div class="box-border h-32 w-32 mx-auto grayscale contrast-150">
+                    <img src="images/e_gonzalez_pic.jpg" class="rounded-full">
+                </div>
+            </div>
+            <div class="mx-auto pt-2">
+                <div class="box-content">
+                    <h2 class="text-slate-900 dark:text-white font-semibold text-center text-lg">Emmanuel G.</h2>
+                </div>
+            </div>
+            <div class="mx-auto pb-1">
+                <div class="box-content">
+                    <h1 class="text-slate-800 dark:text-white font-normal text-center text-xs">Diseñador Gráfico y Web</h1>
+                </div>
+            </div>
+            <div class="pt-0 lg:pt-5 invisible lg:visible">
+                <div class="box-content h-48 w-280 drop-shadow-lg">
+                    <button onClick="javascript:window.open('https://wa.me/+525530266338', '_blank');" class=" transition ease-in-out delay-150 duration-300 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-700 rounded-xl p-3 flex flex-row mx-auto">
+                        <div class="flex items-center">
+                        <div class="basis-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" viewBox="0 0 256 258"><defs><linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#1faf38"/><stop offset="100%" stop-color="#60d669"/></linearGradient><linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#f9f9f9"/><stop offset="100%" stop-color="#fff"/></linearGradient></defs><path fill="url(#logosWhatsappIcon0)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"/><path fill="url(#logosWhatsappIcon1)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"/><path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"/></svg></div>
+                        <div class="basis-full"><p class="text-center text-slate-900 dark:text-slate-400 text-sm pl-3">¡Hablemos en Whatsapp!</p></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="basis-full lg:basis-3/4 px-4 lg:px-0 pb-12 lg:pb-0 mb-12">
+            <!-- <div class="basis-full pt-0 lg:py-5"><p class="text-left lg:text-center text-white text-lg font-semibold">Portafolio</p></div> -->
+            <div class="box-content">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 drop-shadow-lg">
+                    <!-- 01 -->
+                    <div class="border border-sky-400 rounded-lg drop-shadow-lg">
+                        <div class="box-content ">
+                            <div class=""><img src="images/invex-realmadrid.webp" class="w-full rounded-t-lg"></div>
+                            <div class="rounded-b-lg">
+                                <p class="pt-3 pl-5 uppercase font-bold text-slate-900 dark:text-slate-300">banco invex</p>
+                                <p class="pt-1 pl-5 capitalize font-normal text-slate-800 dark:text-slate-400 text-sm">landing</p>
+                                <p class="pt-5 px-5 normal-case font-normal text-slate-700 dark:text-slate-400 text-sm">Diseño y programación del landing realizado para Banco Invex. XD, Photoshop, Bootstrap, HTML 5, CCS 3, Javascript.</p>
+                                <button onClick="javascript:window.open('https://realmadridlanding.netlify.app/', '_blank');" class="transition ease-in-out delay-150 duration-300 float-end mt-5 mr-5 mb-5 rounded bg-sky-600 py-2 px-4 text-sm text-white bg-sky-500 hover:bg-sky-700">
+                                    Visita el sitio web
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 01 -->
+                    <!-- 02 -->
+                    <div class="border border-sky-400 rounded-lg drop-shadow-lg">
+                        <div class="box-content ">
+                            <div class=""><img src="images/enlaces-educativos-internacionales.webp" class="w-full rounded-t-lg"></div>
+                            <div class="rounded-b-lg">
+                                <p class="pt-3 pl-5 uppercase font-bold text-slate-900 dark:text-slate-300">ENLACES EDUCATIVOS INTERNACIONALES</p>
+                                <p class="pt-1 pl-5 capitalize font-normal text-slate-800 dark:text-slate-400 text-sm">wordpress</p>
+                                <p class="pt-5 px-5 normal-case font-normal text-slate-700 dark:text-slate-400 text-sm">Diseño y personalización del sitio web Enlaces Educativos Internacionales en Wordpress. Photoshop, HTML 5, CCS 3.</p>
+                                <button onClick="javascript:window.open('https://enlaceseducativosinternacionales.com/', '_blank');" class="float-end mt-5 mr-5 mb-5 rounded bg-sky-600 py-2 px-4 text-sm text-white bg-sky-500 hover:bg-sky-700">
+                                    Visita el sitio web
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 02 -->
+                    <!-- 03 -->
+                    <div class="border border-sky-400 rounded-lg drop-shadow-lg">
+                        <div class="box-content ">
+                            <div class=""><img src="images/Haiat-y-Amezcua.webp" class="w-full rounded-t-lg"></div>
+                            <div class="rounded-b-lg">
+                                <p class="pt-3 pl-5 uppercase font-bold text-slate-900 dark:text-slate-300">HAIAT & AMEZCUA</p>
+                                <p class="pt-1 pl-5 capitalize font-normal text-slate-800 dark:text-slate-400 text-sm">sitio web</p>
+                                <p class="pt-5 px-5 normal-case font-normal text-slate-700 dark:text-slate-400 text-sm">Programación del sitio web A&H Haiat y Amezcua en Bootstrap. Photoshop, HTML 5, CCS 3.<br> &nbsp;</p>
+                                <button onClick="javascript:window.open('https://www.haiatyamezcua.net/', '_blank');" data-modal-toggle="authentication-modal2" class="float-end mt-5 mr-5 mb-5 rounded bg-sky-600 py-2 px-4 text-sm text-white bg-sky-500 hover:bg-sky-700">
+                                    Visita el sitio web
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 03 -->
+                    <!-- 04 -->
+                    <div class="border border-sky-400 rounded-lg drop-shadow-lg">
+                        <div class="box-content ">
+                            <div class=""><img src="images/ipn-esca-polivirtual.webp" class="w-full rounded-t-lg"></div>
+                            <div class="rounded-b-lg">
+                                <p class="pt-3 pl-5 uppercase font-bold text-slate-900 dark:text-slate-300">INSTITUTO POLITECNICO NACIONAL</p>
+                                <p class="pt-1 pl-5 capitalize font-normal text-slate-800 dark:text-slate-400 text-sm">Animacion</p>
+                                <p class="pt-5 px-5 normal-case font-normal text-slate-700 dark:text-slate-400 text-sm">Video de animación realizado para el Instituto Politecnico Nacional para el Campus Virtual de la ESCA Tepepan.</p>
+                                <button data-modal-toggle="ipn-modal" class="float-end mt-5 mr-5 mb-5 rounded bg-sky-600 py-2 px-4 text-sm text-white bg-sky-500 hover:bg-sky-700">
+                                    Ver video
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 04 -->
+                    <!-- 05 -->
+                    <div class="border border-sky-400 rounded-lg drop-shadow-lg">
+                        <div class="box-content ">
+                            <div class=""><img src="images/egodiseno-promos.webp" class="w-full rounded-t-lg"></div>
+                            <div class="rounded-b-lg">
+                                <p class="pt-3 pl-5 uppercase font-bold text-slate-900 dark:text-slate-300">PROMOCIONALES</p>
+                                <p class="pt-1 pl-5 capitalize font-normal text-slate-800 dark:text-slate-400 text-sm">Animación</p>
+                                <p class="pt-5 px-5 normal-case font-normal text-slate-700 dark:text-slate-400 text-sm">Promocionales para Redes Sociales. Affter Effects, Photoshop, Illustrator <br>&nbsp;</p>
+                                <button data-modal-toggle="promo-modal" class="float-end mt-5 mr-5 mb-5 rounded bg-sky-600 py-2 px-4 text-sm text-white bg-sky-500 hover:bg-sky-700">
+                                    Ver video
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 05 -->
+                    <!-- 06 -->
+                    <div class="border border-sky-400 rounded-lg drop-shadow-lg">
+                        <div class="box-content ">
+                            <div class=""><img src="images/inside-the-body.webp" class="w-full rounded-t-lg"></div>
+                            <div class="rounded-b-lg">
+                                <p class="pt-3 pl-5 uppercase font-bold text-slate-900 dark:text-slate-300">INSIDE THE BODY</p>
+                                <p class="pt-1 pl-5 capitalize font-normal text-slate-800 dark:text-slate-400 text-sm">Realización de video</p>
+                                <p class="pt-5 px-5 normal-case font-normal text-slate-700 dark:text-slate-400 text-sm">Realización de videos promocionales para la producción Firdus de la compañia de danza Inside the body. Photoshop, Premiere Pro.</p>
+                                <button data-modal-toggle="itb-modal" class="float-end mt-5 mr-5 mb-5 rounded bg-sky-600 py-2 px-4 text-sm text-white bg-sky-500 hover:bg-sky-700">
+                                    Ver video
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 06 -->
+                    <!-- 07 -->
+                    <div class="border border-sky-400 rounded-lg drop-shadow-lg">
+                        <div class="box-content ">
+                            <div class=""><img src="images/ggb-ti.webp" class="w-full rounded-t-lg"></div>
+                            <div class="rounded-b-lg">
+                                <p class="pt-3 pl-5 uppercase font-bold text-slate-900 dark:text-slate-300">GGB TI+</p>
+                                <p class="pt-1 pl-5 capitalize font-normal text-slate-800 dark:text-slate-400 text-sm">Sitio web</p>
+                                <p class="pt-5 px-5 normal-case font-normal text-slate-700 dark:text-slate-400 text-sm">Diseño y programación del sitio web realizado para GGB TI+. Photoshop, Illustrator, HTML 5, CCS 3, w3schools y Bootstrap.</p>
+                                <button onClick="javascript:window.open('http://ggbservicios.com.mx/', '_blank');" class="float-end mt-5 mr-5 mb-5 rounded bg-sky-600 py-2 px-4 text-sm text-white bg-sky-500 hover:bg-sky-700">
+                                    Visita el sitio web
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 07 -->
+                    <!-- 08 -->
+                    <div class="border border-sky-400 rounded-lg drop-shadow-lg">
+                        <div class="box-content ">
+                            <div class=""><img src="images/mariadelcarmen.webp" class="w-full rounded-t-lg"></div>
+                            <div class="rounded-b-lg">
+                                <p class="pt-3 pl-5 uppercase font-bold text-slate-900 dark:text-slate-300">HOTEL MARÍA DEL CARMEN</p>
+                                <p class="pt-1 pl-5 capitalize font-normal text-slate-800 dark:text-slate-400 text-sm">Sitio web</p>
+                                <p class="pt-5 px-5 normal-case font-normal text-slate-700 dark:text-slate-400 text-sm">Diseño y programación del sitio web realizado para Hotel María del Carmen. Photoshop, Illustrator, HTML, CCS, Javascript.</p>
+                                <button onClick="javascript:window.open('http://www.hotelmariadelcarmen.com/', '_blank');" class="float-end mt-5 mr-5 mb-5 rounded bg-sky-600 py-2 px-4 text-sm text-white bg-sky-500 hover:bg-sky-700">
+                                    Visita el sitio web
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 08 -->
+                    <!-- 09 -->
+                    <div class="border border-sky-400 rounded-lg drop-shadow-lg">
+                        <div class="box-content ">
+                            <div class=""><img src="images/invex-volaris.webp" class="w-full rounded-t-lg"></div>
+                            <div class="rounded-b-lg">
+                                <p class="pt-3 pl-5 uppercase font-bold text-slate-900 dark:text-slate-300">banco invex</p>
+                                <p class="pt-1 pl-5 capitalize font-normal text-slate-800 dark:text-slate-400 text-sm">landing</p>
+                                <p class="pt-5 px-5 normal-case font-normal text-slate-700 dark:text-slate-400 text-sm">Diseño y programación del landing realizado para Banco Invex. XD, Photoshop, Bootstrap, HTML 5, CCS 3, Javascript.</p>
+                                <button onClick="javascript:window.open('https://invexvolarislanding.netlify.app/', '_blank');" class="float-end mt-5 mr-5 mb-5 rounded bg-sky-600 py-2 px-4 text-sm text-white bg-sky-500 hover:bg-sky-700">
+                                    Visita el sitio web
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 09 -->
+                    
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class=" visible lg:invisible fixed bottom-0 left-0 right-0 py-2 md:py-3 bg-white dark:bg-slate-900 w-full shadow shadow-slate-950">
+        <div class="box-content w-full drop-shadow-lg">
+            <button onClick="javascript:window.open('https://wa.me/+525530266338', '_blank');" class=" transition ease-in-out delay-150 duration-300 bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-800 focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-700 rounded-xl p-3 flex flex-row mx-auto">
+                <div class="flex items-center">
+                <div class="basis-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.25em" viewBox="0 0 256 258"><defs><linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#1faf38"/><stop offset="100%" stop-color="#60d669"/></linearGradient><linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%"><stop offset="0%" stop-color="#f9f9f9"/><stop offset="100%" stop-color="#fff"/></linearGradient></defs><path fill="url(#logosWhatsappIcon0)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a123 123 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004"/><path fill="url(#logosWhatsappIcon1)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z"/><path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561s11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716s-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64"/></svg></div>
+                <div class="basis-full"><p class="text-center text-slate-900 dark:text-slate-400 text-sm pl-3">¡Hablemos en Whatsapp!</p></div>
+                </div>
+            </button>
+        </div>
+    </div>
+  </main>
+  
+<!-- IPN modal -->
+<div id="ipn-modal" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
+    <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="bg-white rounded-lg shadow relative dark:bg-slate-900">
+            <div class="flex justify-end p-2">
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-slate-800 dark:hover:text-white" data-modal-toggle="ipn-modal">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                </button>
+            </div>
+            <iframe class="w-full h-80"  src="https://www.youtube.com/embed/videoseries?si=_xdeQojh30nKrhFp&amp;list=PLodwLt4itNWez1pKN7E_k1qZX7LFpFAnf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div> 
 
-      $(window).scroll(function() {
+<!-- Promo modal -->
+<div id="promo-modal" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
+    <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="bg-white rounded-lg shadow relative dark:bg-slate-900">
+            <div class="flex justify-end p-2">
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-slate-800 dark:hover:text-white" data-modal-toggle="promo-modal">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                </button>
+            </div>
+            <iframe class="w-full h-80"  src="https://www.youtube.com/embed/-UJ3FJd7LAI?si=Hab-4JedD50Hebiy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
-        var height = $('.navbar').height();
-        var scrollTop = $(window).scrollTop();
+<!-- ITB modal -->
+<div id="itb-modal" aria-hidden="true" class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
+    <div class="relative w-full max-w-md px-4 h-full md:h-auto">
+        <!-- Modal content -->
+        <div class="bg-white rounded-lg shadow relative dark:bg-slate-900">
+            <div class="flex justify-end p-2">
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-slate-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-slate-800 dark:hover:text-white" data-modal-toggle="itb-modal">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                </button>
+            </div>
+            <iframe class="w-full h-80" src="https://www.youtube.com/embed/Jed34fYj28g?si=xCWOAnsvKoviysfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
-        if (scrollTop >= height - 2) {
-            $('.nav-test').addClass('solid-nav');
+
+
+</body>
+<link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
+<script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+
+<script>
+    var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+
+// Change the icons inside the button based on previous settings
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon.classList.remove('hidden');
+} else {
+    themeToggleDarkIcon.classList.remove('hidden');
+}
+
+var themeToggleBtn = document.getElementById('theme-toggle');
+
+themeToggleBtn.addEventListener('click', function() {
+
+    // toggle icons inside button
+    themeToggleDarkIcon.classList.toggle('hidden');
+    themeToggleLightIcon.classList.toggle('hidden');
+
+    // if set via local storage previously
+    if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
         } else {
-            $('.nav-test').removeClass('solid-nav');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
         }
 
-        });
-    });
-    </script> 
-    <script type="text/javascript">
-      $('.carousel').carousel({
-  interval: 2000
-})
-    </script> 
-  </body>
+    // if NOT set via local storage previously
+    } else {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        }
+    }
+    
+});
+    </script>
+
 </html>
+
