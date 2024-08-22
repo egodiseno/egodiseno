@@ -91,12 +91,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="mx-auto pt-2">
                 <div class="box-content">
-                    <h2 class="text-slate-900 dark:text-white font-semibold text-center text-lg">Emmanuel G.</h2>
+                    <h2 class="text-slate-900 dark:text-slate-300 font-bold text-center text-lg">Emmanuel G.</h2>
                 </div>
             </div>
             <div class="mx-auto pb-1">
                 <div class="box-content">
-                    <h1 class="text-slate-800 dark:text-white font-normal text-center text-xs">Diseñador Gráfico y Web</h1>
+                    <h1 class="text-slate-800 dark:text-sky-400 font-semibold text-center text-xs">Diseñador Gráfico & Web</h1>
                 </div>
             </div>
             <div class="pt-0 lg:pt-5 invisible lg:visible">
@@ -318,6 +318,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css" />
 <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+
+<script>
+    // Siempre activar el tema oscuro por defecto
+    document.documentElement.classList.add('dark');
+    
+    // Si el usuario ya ha guardado una preferencia, se respeta
+    if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+    }
+</script>
 
 <script>
     var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
