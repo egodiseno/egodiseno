@@ -1,13 +1,6 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&i(o)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();document.querySelector("#app").innerHTML=`
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const i of t.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&o(i)}).observe(document,{childList:!0,subtree:!0});function s(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=s(e);fetch(e.href,t)}})();document.querySelector("#app").innerHTML=`
   <div class="min-h-screen bg-slate-300 dark:bg-slate-800 transition-colors duration-300">
-  <div class="mediaquery">
-      <div class="visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible">XS</div>
-      <div class="invisible sm:visible md:invisible lg:invisible xl:invisible 2xl:invisible">SM</div>
-      <div class="invisible md:visible lg:invisible xl:invisible 2xl:invisible">MD</div>
-      <div class="invisible lg:visible xl:invisible 2xl:invisible">LG</div>
-      <div class="invisible xl:visible 2xl:invisible">XL</div>
-      <div class="invisible 2xl:visible">XXL</div>
-  </div>
+  
   <!-- Header -->
 <header class="flex justify-end p-4 md:p-10">
   <div class="md:fixed">
@@ -29,7 +22,7 @@
     <main class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-3 gap-8">
       <section class="col-span-1 md:col-span-1 flex flex-col items-center text-center ">
         <div class="md:fixed">
-        <img src="images/e_gonzalez_pic.webp" class="rounded-full h-40 w-40 mx-auto grayscale contrast-150 border-4 border-slate-400" alt="Retrato de Emmanuel G., diseñador gráfico y web.">
+        <img src="images/e_gonzalez_pic.webp" width="192" height="192" class="rounded-full h-40 w-40 mx-auto grayscale contrast-150 border-4 border-slate-400" alt="Retrato de Emmanuel G., diseñador gráfico y web.">
         <h1 class="text-slate-900 dark:text-slate-300 font-bold text-lg mt-2">Diseño Gráfico y Web</h1>
         <h2 class="text-slate-800 dark:text-sky-400 font-semibold text-sm">Emmanuel González</h2>
         <button aria-label="Abrir conversación en WhatsApp con Emmanuel G." onClick="window.open('https://wa.me/+525530266338', '_blank');" class="mt-6 hidden md:flex transition ease-in-out delay-150 duration-300 bg-slate-800 dark:bg-slate-950 hover:bg-slate-500 dark:hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-sky-200 dark:focus:ring-sky-700 rounded-xl p-3 items-center mx-auto">
@@ -64,7 +57,7 @@
 <!-- Jardín Cristel/ -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/jardincristel.webp" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web de Jardín Cristel.">
+    <img src="./images/jardincristel.webp" loading="lazy" width="600" height="400" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web de Jardín Cristel.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">Jardín Cristel</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">Single-page website</p>
@@ -80,7 +73,7 @@
 <!-- Banco Invex -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/invex-realmadrid.webp" class="w-full rounded-t-lg" alt="Captura de pantalla del landing page del Banco Invex.">
+    <img src="./images/invex-realmadrid.webp" loading="lazy" width="600" height="400" class="w-full rounded-t-lg" alt="Captura de pantalla del landing page del Banco Invex.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">Banco Invex</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">Landing Page</p>
@@ -96,7 +89,7 @@
 <!-- GGB TI+ -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/ggb-ti.webp" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web 'GGB TI+', mostrando su diseño y estructura.">
+    <img src="./images/ggb-ti.webp" width="600" loading="lazy" height="400" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web 'GGB TI+', mostrando su diseño y estructura.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">GGB TI+</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">Single-page website</p>
@@ -112,7 +105,7 @@
 <!-- Haiat & Amezcua -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/Haiat-y-Amezcua.webp" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web Haiat & Amezcua, mostrando su diseño y funcionalidad.">
+    <img src="./images/Haiat-y-Amezcua.webp" loading="lazy" width="600" height="400" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web Haiat & Amezcua, mostrando su diseño y funcionalidad.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">Haiat & Amezcua</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">Sitio web</p>
@@ -128,7 +121,7 @@
 <!-- Enlaces Educativos Internacionales -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/enlaces-educativos-internacionales.webp" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web Enlaces Educativos Internacionales.">
+    <img src="./images/enlaces-educativos-internacionales.webp" loading="lazy" width="600" height="400" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web Enlaces Educativos Internacionales.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">Enlaces Educativos Internacionales</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">WordPress</p>
@@ -144,7 +137,7 @@
 <!-- Instituto Politécnico Nacional -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/ipn-esca-polivirtual.webp" class="w-full rounded-t-lg" alt="Captura de pantalla del video de animación para el Instituto Politécnico Nacional, mostrando el diseño y contenido del Campus Virtual de la ESCA Tepepan.">
+    <img src="./images/ipn-esca-polivirtual.webp" loading="lazy" width="600" height="400" class="w-full rounded-t-lg" alt="Captura de pantalla del video de animación para el Instituto Politécnico Nacional, mostrando el diseño y contenido del Campus Virtual de la ESCA Tepepan.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">Instituto Politécnico Nacional</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">Animación</p>
@@ -160,7 +153,7 @@
 <!-- Promocionales -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/egodiseno-promos.webp" class="w-full rounded-t-lg" alt="Ejemplo de promociones animadas para redes sociales, creado con After Effects, Photoshop e Illustrator.">
+    <img src="./images/egodiseno-promos.webp" loading="lazy" width="600" height="400" class="w-full rounded-t-lg" alt="Ejemplo de promociones animadas para redes sociales, creado con After Effects, Photoshop e Illustrator.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">Promocionales</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">Animación</p>
@@ -178,7 +171,7 @@
 <!-- Inside the Body -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/inside-the-body.webp" class="w-full rounded-t-lg" alt="Video promocional titulado 'Inside the Body', realizado con Photoshop y Premiere Pro.">
+    <img src="./images/inside-the-body.webp" loading="lazy" width="600" height="400" class="w-full rounded-t-lg" alt="Video promocional titulado 'Inside the Body', realizado con Photoshop y Premiere Pro.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">Inside the Body</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">Realización de video</p>
@@ -194,7 +187,7 @@
 <!-- Hotel María del Carmen -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/mariadelcarmen.webp" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web del Hotel María del Carmen, mostrando su diseño y estructura.">
+    <img src="./images/mariadelcarmen.webp" loading="lazy" width="600" height="400" class="w-full rounded-t-lg" alt="Captura de pantalla del sitio web del Hotel María del Carmen, mostrando su diseño y estructura.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">Hotel María del Carmen</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">Sitio web</p>
@@ -210,7 +203,7 @@
 <!-- Banco Invex< -->
 <div class="border border-sky-400 rounded-lg flex flex-col h-full">
   <div class="box-content flex flex-col flex-1">
-    <img src="./images/invex-volaris.webp" class="w-full rounded-t-lg" alt="Captura de pantalla del landing page para Invex y Volaris, mostrando el diseño y la estructura.">
+    <img src="./images/invex-volaris.webp" loading="lazy" width="600" height="400" class="w-full rounded-t-lg" alt="Captura de pantalla del landing page para Invex y Volaris, mostrando el diseño y la estructura.">
     <div class="p-5 flex flex-col justify-between flex-1">
       <h3 class="uppercase font-bold text-slate-900 dark:text-slate-300">Banco Invex</h3>
       <p class="capitalize font-bold text-slate-800 dark:text-slate-400 text-sm">Landing page</p>
@@ -249,4 +242,4 @@
   </div>
 
 
-`;document.addEventListener("DOMContentLoaded",()=>{const l=document.getElementById("theme-toggle"),a=document.getElementById("theme-toggle-dark-icon"),s=document.getElementById("theme-toggle-light-icon");function i(){l.classList.add("button-glow-start"),setTimeout(()=>{l.classList.remove("button-glow-start"),setTimeout(()=>{l.classList.add("button-glow")},5e3)},5e3)}localStorage.getItem("theme")==="dark"?(document.documentElement.classList.add("dark"),a.classList.remove("hidden"),s.classList.add("hidden")):(document.documentElement.classList.remove("dark"),a.classList.add("hidden"),s.classList.remove("hidden")),i(),l.addEventListener("click",()=>{document.documentElement.classList.toggle("dark"),document.documentElement.classList.contains("dark")?(a.classList.remove("hidden"),s.classList.add("hidden"),localStorage.setItem("theme","dark")):(a.classList.add("hidden"),s.classList.remove("hidden"),localStorage.setItem("theme","light"))}),setInterval(i,1e4)});document.addEventListener("scroll",function(){const l=document.getElementById("cta");(window.scrollY||window.pageYOffset)>300?l.classList.add("visible"):l.classList.remove("visible")});
+`;document.addEventListener("DOMContentLoaded",()=>{const l=document.getElementById("theme-toggle"),a=document.getElementById("theme-toggle-dark-icon"),s=document.getElementById("theme-toggle-light-icon");function o(){l.classList.add("button-glow-start"),setTimeout(()=>{l.classList.remove("button-glow-start"),setTimeout(()=>{l.classList.add("button-glow")},5e3)},5e3)}const e=localStorage.getItem("theme");document.documentElement.classList.add("dark"),a.classList.remove("hidden"),s.classList.add("hidden"),o(),l.addEventListener("click",()=>{document.documentElement.classList.toggle("dark"),document.documentElement.classList.contains("dark")?(a.classList.remove("hidden"),s.classList.add("hidden"),localStorage.setItem("theme","dark")):(a.classList.add("hidden"),s.classList.remove("hidden"),localStorage.setItem("theme","light"))}),setInterval(o,1e4)});document.addEventListener("scroll",function(){const l=document.getElementById("cta");(window.scrollY||window.pageYOffset)>300?l.classList.add("visible"):l.classList.remove("visible")});
