@@ -1,0 +1,32 @@
+# robots.txt para www.egodiseno.com
+
+# Permitir a todos los bots rastrear todo el sitio
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Permitir que Googlebot acceda a todo el sitio
+User-agent: Googlebot
+Disallow:
+
+# Sitemap de la página
+Sitemap: https://www.egodiseno.com/sitemap.xml
+
+# Directrices específicas para Bing
+User-agent: Bingbot
+Disallow: /private/
+Disallow: /admin/
+
+# Directrices específicas para Yandex
+User-agent: Yandex
+Disallow: /private/
+Disallow: /admin/
+
+# No permitir que los bots accedan a ciertos parámetros URL
+User-agent: *
+Disallow: /*?session_id=
+Disallow: /*?search=
+Disallow: /*?filter=
